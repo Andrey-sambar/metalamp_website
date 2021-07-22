@@ -10,6 +10,11 @@ module.exports = {
         filename: '[contenthash].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    resolve: {
+        alias: {
+            '@fonts': path.resolve(__dirname, 'src/fonts')
+        }
+    },
     devServer: {
         port: 4200
     },
